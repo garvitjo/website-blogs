@@ -8,11 +8,12 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
-    enableSPA: true,
+    pageTitle: "Garvit's Notes",
+    logoSrc:"quartz/static/logo.png",
+    enableSPA: false,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: 'google', tagId: 'G-8WNH2XEHF5'
     },
     locale: "en-US",
     baseUrl: "quartz.jzhao.xyz",
