@@ -21,15 +21,15 @@
 
 // export default (() => PageTitle) satisfies QuartzComponentConstructor
 
-import { pathToRoot } from "../util/path"
+import { pathToRoot, joinSegments } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
 
 const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {
   const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
-  const logoSrc = cfg?.logoSrc ?? "" // Add a logoSrc property in cfg
   const baseDir = pathToRoot(fileData.slug!)
+  const logoSrc = joinSegments(baseDir, "static/logo.png");
 
   return (
     <h1 class={classNames(displayClass, "page-title")}>

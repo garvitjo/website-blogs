@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Garvit's Notes",
-    logoSrc:"quartz/static/logo.png",
+    pageTitle: "Garvit Joshi 🦍",
+    logoSrc:"", //not working, but i know a way now.
     enableSPA: false,
     enablePopovers: true,
     analytics: {

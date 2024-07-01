@@ -1,9 +1,9 @@
 ---
-title: Welcome to Quartz
+title: Garvit's Notes
 ---
 
 # Welcome to my Blogs
-
+**This is where you are starting hello kids.**
 
 ## Start here
 
